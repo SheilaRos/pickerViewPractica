@@ -92,7 +92,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             mensaje.text = ""
             mensaje2.text = ""
         }
-        //añadimos constrains para que sea responsive con diferentes versiones de Iphone.
     }
 }
 
