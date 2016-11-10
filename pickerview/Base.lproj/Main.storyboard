@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pickerview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwP-fz-dNc">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gwP-fz-dNc" secondAttribute="height" multiplier="59:72" id="Bix-gG-gcy"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-wV-xYF">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I4I-wV-xYF" secondAttribute="height" multiplier="53:72" id="oa5-9I-1M4"/>
+                                </constraints>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sheila Ros y Larry Sanchez" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V2Q-47-1qo">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V2Q-47-1qo" secondAttribute="height" multiplier="192:41" id="qbf-fc-upS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-ca-0CO">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cGc-ca-0CO" secondAttribute="height" multiplier="123:128" id="J5n-yQ-pXZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agua.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EfQ-7q-POu">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EfQ-7q-POu" secondAttribute="height" multiplier="65:64" id="RGa-kj-8nr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwn-em-3zX">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cwn-em-3zX" secondAttribute="height" multiplier="297:31" id="Ht0-O7-yqA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-2f-rx2">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LbN-2f-rx2" secondAttribute="height" multiplier="183:37" id="EwH-O1-Zdg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cGc-ca-0CO" firstAttribute="top" secondItem="V2Q-47-1qo" secondAttribute="bottom" constant="51" id="1En-6B-oRo"/>
+                            <constraint firstItem="LbN-2f-rx2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2l7-Ov-oz7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cwn-em-3zX" secondAttribute="trailing" constant="23" id="3cM-vb-Jwv"/>
+                            <constraint firstItem="V2Q-47-1qo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="79z-by-Qu5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I4I-wV-xYF" secondAttribute="bottom" constant="42" id="8zH-Ji-KQy"/>
+                            <constraint firstItem="EfQ-7q-POu" firstAttribute="top" secondItem="V2Q-47-1qo" secondAttribute="bottom" constant="51" id="ChY-IU-3Ek"/>
+                            <constraint firstItem="cGc-ca-0CO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="JRj-hE-ahX"/>
+                            <constraint firstItem="EfQ-7q-POu" firstAttribute="top" secondItem="V2Q-47-1qo" secondAttribute="bottom" constant="51" id="OZv-AJ-zk8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gwP-fz-dNc" secondAttribute="bottom" constant="42" id="Pt0-ii-EHW"/>
+                            <constraint firstItem="V2Q-47-1qo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qpj-9O-E6g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V2Q-47-1qo" secondAttribute="trailing" constant="97" id="RYv-hq-1Bn"/>
+                            <constraint firstItem="I4I-wV-xYF" firstAttribute="leading" secondItem="gwP-fz-dNc" secondAttribute="trailing" constant="28" id="Rpg-Aq-d1h"/>
+                            <constraint firstItem="LbN-2f-rx2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="UpG-Km-t4j"/>
+                            <constraint firstItem="I4I-wV-xYF" firstAttribute="top" secondItem="LbN-2f-rx2" secondAttribute="bottom" constant="31" id="YcK-MN-ygw"/>
+                            <constraint firstItem="cwn-em-3zX" firstAttribute="top" secondItem="EfQ-7q-POu" secondAttribute="bottom" constant="43" id="cR3-eQ-8xl"/>
+                            <constraint firstItem="cwn-em-3zX" firstAttribute="top" secondItem="cGc-ca-0CO" secondAttribute="bottom" constant="43" id="cYx-Sr-6VH"/>
+                            <constraint firstItem="cwn-em-3zX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="exr-ij-iA4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EfQ-7q-POu" secondAttribute="trailing" constant="11" id="jXd-vg-ina"/>
+                            <constraint firstItem="gwP-fz-dNc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kH2-Ch-pXg"/>
+                            <constraint firstItem="LbN-2f-rx2" firstAttribute="top" secondItem="cwn-em-3zX" secondAttribute="bottom" constant="27" id="nnf-ja-KHX"/>
+                            <constraint firstItem="I4I-wV-xYF" firstAttribute="leading" secondItem="gwP-fz-dNc" secondAttribute="trailing" constant="28" id="q0f-de-CwN"/>
+                            <constraint firstAttribute="trailing" secondItem="I4I-wV-xYF" secondAttribute="trailing" constant="11" id="rOF-ID-nCg"/>
+                            <constraint firstItem="cwn-em-3zX" firstAttribute="top" secondItem="EfQ-7q-POu" secondAttribute="bottom" constant="43" id="sHM-d8-M4h"/>
+                            <constraint firstItem="EfQ-7q-POu" firstAttribute="leading" secondItem="cGc-ca-0CO" secondAttribute="trailing" constant="68" id="u8r-Ui-W73"/>
+                            <constraint firstItem="EfQ-7q-POu" firstAttribute="leading" secondItem="cGc-ca-0CO" secondAttribute="trailing" constant="68" id="yhH-vs-Tbc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ipokemon" destination="cGc-ca-0CO" id="9qB-kc-D7d"/>
+                        <outlet property="itipo" destination="EfQ-7q-POu" id="WXd-bX-cDy"/>
+                        <outlet property="mensaje" destination="cwn-em-3zX" id="Dm0-OT-Ng0"/>
+                        <outlet property="mensaje2" destination="LbN-2f-rx2" id="Vkw-DZ-aXf"/>
+                        <outlet property="pokemon" destination="gwP-fz-dNc" id="HDg-jV-KiM"/>
+                        <outlet property="tipo" destination="I4I-wV-xYF" id="CKx-Yh-pn1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786.39999999999998" y="-51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agua.jpg" width="236" height="226"/>
+        <image name="pikachu.jpg" width="800" height="533"/>
+    </resources>
+</document>
